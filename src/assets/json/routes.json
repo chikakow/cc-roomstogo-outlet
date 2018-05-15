@@ -1,0 +1,375 @@
+[
+  {
+    "path": "weekly/se",
+    "component": "FlierComponent",
+    "title": "Southeast Outlet Weekly Specials",
+    "description": "Southeast Rooms To Go Outlet weekly specials. Find closeouts, clearance items, furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop Southeast outlet specials."
+  },
+  {
+    "path": "weekly/fl",
+    "component": "FlierComponent",
+    "title": "Florida Outlet Weekly Specials",
+    "description": "Florida Rooms To Go Outlet weekly specials. Find closeouts, clearance items, furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop Florida outlet specials."
+  },
+  {
+    "path": "weekly/tx",
+    "component": "FlierComponent",
+    "title": "Texas Outlet Weekly Specials",
+    "description": "Texas Rooms To Go Outlet weekly specials. Find closeouts, clearance items, furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop Texas outlet specials."
+  },
+  {
+    "path": "mattress/se",
+    "component": "FlierComponent",
+    "title": "Southeast Outlet Mattress Specials",
+    "description": "Southeast Rooms To Go Outlet mattress specials. Find closeouts, clearance items, furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop Southeast outlet specials."
+  },
+  {
+    "path": "mattress/fl",
+    "component": "FlierComponent",
+    "title": "Florida Outlet Mattress Specials",
+    "description": "Florida Rooms To Go Outlet mattress specials. Find closeouts, clearance items, furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop Florida outlet specials."
+  },
+  {
+    "path": "mattress/tx",
+    "component": "FlierComponent",
+    "title": "Texas Outlet Mattress Specials",
+    "description": "Texas Rooms To Go Outlet mattress specials. Find closeouts, clearance items, furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop Texas outlet specials."
+  },
+  {
+    "path": "discount-living-rooms/sofas",
+    "component": "DetailComponent",
+    "title": "Discount Sofas & Affordable Couches For Sale",
+    "description": "Buy Sofas at a Rooms To Go Outlet store near you.  Discount Living Room Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-living-rooms/sleeper-sofas",
+    "component": "DetailComponent",
+    "title": "Discount Sleeper Sofas - Affordable Sofa Sleeper Options",
+    "description": "Buy Discount Sleeper Sofas at a Rooms To Go Outlet store near you.  Discount Living Room Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-living-rooms/reclining-sofas",
+    "component": "DetailComponent",
+    "title": "Discount Reclining Sofas - Affordable Reclining Sofas For Sale",
+    "description": "Buy Discount Reclining Sofas at a Rooms To Go Outlet store near you.  Discount Living Room Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-living-rooms/loveseats",
+    "component": "DetailComponent",
+    "title": "Discount Loveseats - Affordable Loveseats For Sale",
+    "description": "Buy Discount Loveseats at a Rooms To Go Outlet store near you.  Discount Living Room Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-living-rooms/chairs",
+    "component": "DetailComponent",
+    "title": "Discount Living Room Chairs, Chair Seating Options",
+    "description": "Buy Discount Chairs at a Rooms To Go Outlet store near you.  Discount Living Room Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-living-rooms/ottomans",
+    "component": "DetailComponent",
+    "title": "Discount Ottomans - Affordable Ottomans for Sale",
+    "description": "Buy Discount Ottomans at a Rooms To Go Outlet store near you.  Discount Living Room Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-living-rooms/recliners",
+    "component": "DetailComponent",
+    "title": "Discount Recliners - Affordable Recliners for Sale",
+    "description": "Buy Discount Recliners at a Rooms To Go Outlet store near you.  Discount Living Room Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-living-rooms/chaise-lounges",
+    "component": "DetailComponent",
+    "title": "Discount Chaise Lounges - Affordable Chaise Lounges for Sale",
+    "description": "Buy Discount Chaises at a Rooms To Go Outlet store near you.  Discount Living Room Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-living-rooms/coffee-table-sets",
+    "component": "DetailComponent",
+    "title": "Discount Coffee Table Sets - Affordable Coffee Table Sets for Sale",
+    "description": "Buy Discount Coffee Table Sets at a Rooms To Go Outlet store near you.  Discount Living Room Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-living-rooms/entertainment-center",
+    "component": "DetailComponent",
+    "title": "Discount Entertainment Center - Affordable Entertainment Center for Sale",
+    "description": "Buy Discount Entertainment Center at a Rooms To Go Outlet store near you.  Discount Living Room Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-dining-rooms/dining-set",
+    "component": "DetailComponent",
+    "title": "Discount Dining Room Sets",
+    "description": "Buy Discount Dining Room Sets at a Rooms To Go Outlet store near you.  Discount Dining Room Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-dining-rooms/tables",
+    "component": "DetailComponent",
+    "title": "Discount Dining Tables",
+    "description": "Buy Discount Dining Tables at a Rooms To Go Outlet store near you.  Discount Dining Room Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-dining-rooms/side-chairs",
+    "component": "DetailComponent",
+    "title": "Discount Dining Room Side Chairs",
+    "description": "Buy Discount Side Chairs at a Rooms To Go Outlet store near you.  Discount Dining Room Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-dining-rooms/china-cabinets",
+    "component": "DetailComponent",
+    "title": "Discount China Cabinets",
+    "description": "Buy Discount China Cabinets at a Rooms To Go Outlet store near you.  Discount Dining Room Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-dining-rooms/benches",
+    "component": "DetailComponent",
+    "title": "Discount Dining Room Benches",
+    "description": "Buy Discount Sleeper Sofas at a Rooms To Go Outlet store near you.  Discount Dining Room Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-dining-rooms/servers",
+    "component": "DetailComponent",
+    "title": "Discount Dining Room Servers",
+    "description": "Buy Discount Servers at a Rooms To Go Outlet store near you.  Discount Dining Room Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-bedrooms/bedroom-sets",
+    "component": "DetailComponent",
+    "title": "Discount Bedroom Sets",
+    "description": "Buy Discount Bedroom Sets at a Rooms To Go Outlet store near you.  Discount Bedroom Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-bedrooms/queen-bedroom-sets",
+    "component": "DetailComponent",
+    "title": "Discount Queen Bedroom Sets",
+    "description": "Buy Discount Queen Bedroom Sets at a Rooms To Go Outlet store near you.  Discount Bedroom Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-bedrooms/queen-beds",
+    "component": "DetailComponent",
+    "title": "Discount Queen Beds",
+    "description": "Buy Discount Queen Beds at a Rooms To Go Outlet store near you.  Discount Bedroom Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-bedrooms/king-bedroom-sets",
+    "component": "DetailComponent",
+    "title": "Discount King Bedroom Sets",
+    "description": "Buy Discount King Bedroom Sets at a Rooms To Go Outlet store near you.  Discount Bedroom Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-bedrooms/king-beds",
+    "component": "DetailComponent",
+    "title": "Discount King Beds",
+    "description": "Buy Discount King Beds at a Rooms To Go Outlet store near you.  Discount Bedroom Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-bedrooms/daybeds",
+    "component": "DetailComponent",
+    "title": "Discount Daybeds",
+    "description": "Buy Discount Daybeds at a Rooms To Go Outlet store near you.  Discount Bedroom Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-bedrooms/headboards",
+    "component": "DetailComponent",
+    "title": "Discount Headboards",
+    "description": "Buy Discount Headboards at a Rooms To Go Outlet store near you.  Discount Bedroom Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-bedrooms/dressers",
+    "component": "DetailComponent",
+    "title": "Discount Dressers",
+    "description": "Buy Discount Dressers at a Rooms To Go Outlet store near you.  Discount Bedroom Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-bedrooms/vanity-mirrors",
+    "component": "DetailComponent",
+    "title": "Discount Vanity Mirrors",
+    "description": "Buy Discount Dresser Mirrors at a Rooms To Go Outlet store near you.  Discount Bedroom Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-bedrooms/nightstands",
+    "component": "DetailComponent",
+    "title": "Discount Nightstands",
+    "description": "Buy Discount Nightstands at a Rooms To Go Outlet store near you.  Discount Bedroom Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-bedrooms/chests",
+    "component": "DetailComponent",
+    "title": "Discount Chests",
+    "description": "Buy Discount Chests at a Rooms To Go Outlet store near you.  Discount Bedroom Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-bedrooms/desks",
+    "component": "DetailComponent",
+    "title": "Discount Desks",
+    "description": "Buy Discount Desks at a Rooms To Go Outlet store near you.  Discount Bedroom Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-leather/sofas",
+    "component": "DetailComponent",
+    "title": "Discount Leather Sofas",
+    "description": "Buy Discount Leather Sofas at a Rooms To Go Outlet store near you.  Discount Leather Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-leather/leather-loveseats",
+    "component": "DetailComponent",
+    "title": "Discount Leather Loveseats",
+    "description": "Buy Discount Leather Loveseats at a Rooms To Go Outlet store near you.  Discount Leather Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-leather/leather-recliners",
+    "component": "DetailComponent",
+    "title": "Discount Leather Recliners",
+    "description": "Buy Discount Leather Recliners at a Rooms To Go Outlet store near you.  Discount Leather Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-leather/reclining-sofas",
+    "component": "DetailComponent",
+    "title": "Discount Leather Reclining Sofas",
+    "description": "Buy Discount Leather Recliner Sofas at a Rooms To Go Outlet store near you.  Discount Leather Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-leather/leather-chairs",
+    "component": "DetailComponent",
+    "title": "Discount Leather Chairs",
+    "description": "Buy Discount Leather Chairs at a Rooms To Go Outlet store near you.  Discount Leather Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-leather/leather-ottomans",
+    "component": "DetailComponent",
+    "title": "Discount Leather Ottomans",
+    "description": "Buy Discount Leather Ottomans at a Rooms To Go Outlet store near you.  Discount Leather Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-mattress/queen-mattresses",
+    "component": "DetailComponent",
+    "title": "Discount Mattresses - Rooms To Go Outlet",
+    "description": "Buy Discount Queen Mattress at a Rooms To Go Outlet store near you.  Discount Mattress near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-mattress/king-mattresses",
+    "component": "DetailComponent",
+    "title": "Discount King Mattresses",
+    "description": "Buy Discount King Mattress at a Rooms To Go Outlet store near you.  Discount Mattress near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-home-decor/lamps",
+    "component": "DetailComponent",
+    "title": "Discount Lamps",
+    "description": "Buy Discount Lamps at a Rooms To Go Outlet store near you.  Discount Home Decor near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-home-decor/rugs",
+    "component": "DetailComponent",
+    "title": "Discount Rugs",
+    "description": "Buy Discount Rugs at a Rooms To Go Outlet store near you.  Discount Home Decor near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-home-decor/wall-art",
+    "component": "DetailComponent",
+    "title": "Discount Wall Art",
+    "description": "Buy Discount Wall Art at a Rooms To Go Outlet store near you.  Discount Home Decor near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-home-decor/silk-flowers",
+    "component": "DetailComponent",
+    "title": "Discount Silk Flowers",
+    "description": "Buy Discount Silk Florals at a Rooms To Go Outlet store near you.  Discount Home Decor near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-home-decor/throw-pillows",
+    "component": "DetailComponent",
+    "title": "Discount Throw Pillows",
+    "description": "Buy Discount Throw Pillows at a Rooms To Go Outlet store near you.  Discount Home Decor near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-home-decor/accent-cabinet",
+    "component": "DetailComponent",
+    "title": "Discount Accent Cabinets",
+    "description": "Buy Discount Accent Cabinets at a Rooms To Go Outlet store near you.  Discount Home Decor near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-home-decor/storage-benches",
+    "component": "DetailComponent",
+    "title": "Discount Storage Benches",
+    "description": "Buy Discount Storage Benches at a Rooms To Go Outlet store near you.  Discount Home Decor Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-living-rooms",
+    "component": "CategoryComponent",
+    "title": "Discount Living Room Furniture - Sofas, Chairs & Room Sets",
+    "description": "Buy Discount Living Room furniture at a Rooms To Go Outlet store near you.  Discount Living Room Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-dining-rooms",
+    "component": "CategoryComponent",
+    "title": "Discount Dining Room Furniture - Rooms To Go Outlet",
+    "description": "Buy Discount Dining Room furniture at a Rooms To Go Outlet store near you.  Discount Dining Room Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-bedrooms",
+    "component": "CategoryComponent",
+    "title": "Discount Bedroom Furniture - Rooms To Go Outlet",
+    "description": "Buy Discount Bedroom furniture at a Rooms To Go Outlet store near you.  Discount Bedroom Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-leather",
+    "component": "CategoryComponent",
+    "title": "Discount Leather Living Room Furniture - Leather Sofas & Chairs",
+    "description": "Buy Discount Leather furniture at a Rooms To Go Outlet store near you.  Discount Leather Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-mattress",
+    "component": "CategoryComponent",
+    "title": "Discount Mattresses - Rooms To Go Outlet",
+    "description": "Buy Discount Mattress at a Rooms To Go Outlet store near you.  Discount Mattress near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "discount-home-decor",
+    "component": "CategoryComponent",
+    "title": "Discount Home Decor - Home Furnishings & Accessories",
+    "description": "Buy Discount Home Decor at a Rooms To Go Outlet store near you.  Discount Home Decor near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "customer-service/terms-of-sale",
+    "component": "TermsOfSaleComponent",
+    "title": "Furniture Outlet - Terms of Sale",
+    "description": "Buy Discount Furniture at a Rooms To Go Outlet store near you.  Discount Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "customer-service/terminos-de-venta",
+    "component": "TermsOfSaleEsComponent",
+    "title": "Furniture Outlet - Términos de Venta",
+    "description": "Buy Discount Furniture at a Rooms To Go Outlet store near you.  Discount Furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop today."
+  },
+  {
+    "path": "stores",
+    "component": "OutletStores2Component",
+    "title": "Rooms To Go Furniture Outlet Clearance - Warehouse Discounts & Specials",
+    "description": "Official Rooms To Go furniture outlet site.  Find weekly special offers that can be used at any of our furniture outlets. Discount items, cheap furniture or home decor. Closeouts, clearance items, furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop an outlet near you."
+  },
+  {
+    "path":"stores/:city/:id",
+    "component":"StoreLocationComponent",
+    "title":"Discount Warehouse Furniture Outlet in [city], [state_abbreviation]",
+    "description":"Shop for discounts at the Rooms to Go furniture outlet in [city], [state]. Find affordable deals at our warehouse on closeouts & overstock furniture"
+  },
+  {
+    "path": "coupons/:key",
+    "component": "CouponComponent",
+    "title": "Rooms To Go Furniture Outlet Clearance - Coupons",
+    "description": "Official Rooms To Go furniture outlet site.  Find weekly special offers that can be used at any of our furniture outlets. Discount items, cheap furniture or home decor. Closeouts, clearance items, furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop an outlet near you."
+  },
+  {
+    "path": "",
+    "component": "HomeComponent",
+    "title": "Rooms To Go Furniture Outlet Clearance - Warehouse Discounts & Specials",
+    "description": "Official Rooms To Go furniture outlet site.  Find weekly special offers that can be used at any of our furniture outlets. Discount items, cheap furniture or home decor. Closeouts, clearance items, furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop an outlet near you.",
+    "pathMatch": "full"
+  },
+  {
+    "path": "**",
+    "component": "HomeComponent",
+    "title": "Rooms To Go Furniture Outlet Clearance - Warehouse Discounts & Specials",
+    "description": "Official Rooms To Go furniture outlet site.  Find weekly special offers that can be used at any of our furniture outlets. Discount items, cheap furniture or home decor. Closeouts, clearance items, furniture near cost, at cost, or below cost.  Samples, specials, scratch and dent, warehouse items at outlet prices.  Shop an outlet near you."
+  }
+]

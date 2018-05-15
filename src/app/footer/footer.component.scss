@@ -1,0 +1,46 @@
+@import "../../assets/styles/variables";
+
+footer {
+  background: $color-purple-lightgrey;
+
+  @include media-breakpoint-down(xs) {
+    background: $color-blue;
+  }
+
+  color: $color-white;
+
+  .facebook-wrapper {
+    padding-top: 7px;
+  }
+
+  i.social-icon {
+    font-size: 40px;
+    color: $color-white;
+    cursor: pointer;
+
+    &.facebook {
+      color: $color-lightergray;
+      background-color: white;
+      padding: 0 13px;
+      font-size: 33px;
+      border-radius: 5px;
+    }
+  }
+
+  span {
+    margin: auto auto;
+    text-align: center;
+    &:first-child {
+      margin-top: 3px;
+    }
+    &:last-child {
+      margin-bottom: 3px;
+    }
+  }
+
+  a.terms {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

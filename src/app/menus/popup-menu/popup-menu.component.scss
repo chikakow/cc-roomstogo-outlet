@@ -1,0 +1,30 @@
+@import "../../../assets/styles/variables.scss";
+
+:host:not(.vertical-menu) {
+  position: absolute;
+  z-index: $zindex-navbar;
+  width: 600px;
+  background-color: $color-white;
+  border-bottom: $divider-border-lightgray;
+  border-left: $divider-border-lightgray;
+  border-right: $divider-border-lightgray;
+  border-top: solid 3px $color-white;
+  top: 34px;
+
+  @include media-breakpoint-down(md) {
+    top: 30px;
+  }
+
+  img {
+    float: right;
+    margin: 10px;
+    @include img-keep-ratio-height(200px);
+  }
+}
+
+:host(.vertical-menu) {
+  border-top: $divider-border-lightgray;
+
+}
+
+

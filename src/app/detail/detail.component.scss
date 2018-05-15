@@ -1,0 +1,194 @@
+@import "../../assets/styles/variables";
+
+
+.breadcrumb {
+  background-color: $color-white;
+}
+
+.online-sales {
+
+  text-align: center;
+
+  a {
+    text-decoration: underline;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 3px 0 0 0;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 16px;
+    }
+  }
+
+  h3 {
+    font-size: 22px;
+    line-height: 25px;
+    margin: 5px 0 8px 0;
+    color: #004fc5;
+    font-weight: bold;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 19px;
+      margin: 5px 0 9px 0;
+    }
+  }
+}
+
+.main-image-pane {
+
+  //background-repeat: no-repeat;
+  //background-color: $color-super-lightgray;
+  //background-position: center 30%;
+  //background-size: 60%;
+  //min-height: 372px;
+
+  //@include media-breakpoint-down(md) {
+  //  min-height: 280px;
+  //  background-size: 80%;
+  //}
+  //
+  //@include media-breakpoint-down(xs) {
+  //  min-height: 220px;
+  //  background-size: 100%;
+  //}
+
+  //@media only screen and (min-width: 768px) and (max-height: 801px)  {
+  //min-height: 65px;
+  //}
+}
+
+.save-banner-col {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.details {
+  background-color: $color-super-lightgray;
+  padding: 20px;
+
+  .detail {
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    border: dashed $color-lightgray 2px;
+  }
+}
+
+.card-image {
+
+  &.padding {
+
+    padding: 20px;
+  }
+}
+
+.view-detail {
+  text-align: right;
+  color: $color-gray;
+}
+
+.price {
+  height: 15px;
+  color: $color-dark-red;
+  font-size: 18px;
+  text-align: right;
+
+}
+
+.buy-online {
+
+  text-align: left;
+  width: 130px;
+  padding: 0;
+  margin: 0 0 0 0;
+  background-color: transparent;
+  color: $color-blue;
+  position: absolute;
+  bottom: 20px;
+
+  @include media-breakpoint-down(xs) {
+    text-align: center;
+    background-color: $color-blue;
+    color: $color-white;
+    padding: 8px;
+
+    div {
+      font-size: 12px;
+    }
+  }
+}
+
+.item-overlay {
+  cursor: pointer;
+  margin: 17px 15px -2px 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: $zindex-dropdown-backdrop;
+  border-radius: $item-border-radius;
+  text-align: center;
+
+  @include hex-to-rgba(background-color, $color-black, 0);
+
+  div {
+    display: block;
+
+    span {
+      visibility: hidden;
+      width: 155px;
+      background-color: lighten($color-green, 5%);
+      color: $color-white;
+      padding: 7px 15px;
+      box-shadow: $box-shadow;
+      font-size: 17px;
+      text-align: center;
+      display: block;
+      vertical-align: middle;
+    }
+
+    &.buy-now {
+      position: absolute;
+      top: 30%;
+      left: 40%;
+      left: calc(50% - 75px);
+
+      span {
+
+        div {
+          width: 100%;
+          text-align: center;
+          font-size: 15px;
+        }
+      }
+    }
+
+    &.view-detail {
+      position: absolute;
+      top: 55%;
+      left: 40%;
+      left: calc(50% - 75px);
+
+      span {
+        background-color: transparent;
+        box-shadow: none;
+        text-decoration: underline;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &:hover, &:active {
+    @include hex-to-rgba(background-color, $color-black, 0.58);
+
+    div.buy-now, div.view-detail {
+      span {
+        visibility: visible;
+      }
+    }
+  }
+
+}

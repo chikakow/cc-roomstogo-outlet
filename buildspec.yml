@@ -1,0 +1,35 @@
+version: 0.1
+environment_variables:
+    plaintext:
+        S3_BUCKET: "rtgtest"
+        BUILD_ENV: "prod"
+phases:
+    install:
+        commands:
+            - echo Download chrome install package...
+            - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+            - echo Installing chrome dependencies...
+            - sudo apt-get update
+            - sudo apt-get install libgconf2-4 libnss3-1d libxss1 libasound2 libatk1.0-0 libcups2 libgtk-3-0 libx11-xcb1 libxcomposite1 libxcursor1 libxdamage1 libxfixes3 fonts-liberation libappindicator1 xdg-utils -y
+            - echo Installing chrome
+            - sudo dpkg -i ./google-chrome*.deb
+            - sudo apt-get update && sudo apt-get install -f
+            - echo Installing source NPM dependencies...
+            - npm install
+            - npm install -g @angular/cli
+    pre_build:
+            commands:
+                - ng test
+    build:
+        commands:
+            - echo Build started on `date`
+            - ng build --env=${BUILD_ENV}
+    post_build:
+        commands:
+            - aws s3 cp dist s3://${S3_BUCKET} --recursive
+            - echo Build completed on `date`
+artifacts:
+    files:
+        - '**/*'
+    base-directory: 'dist*'
+    discard-paths: yes

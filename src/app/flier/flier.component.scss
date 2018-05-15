@@ -1,0 +1,86 @@
+@import "../../assets/styles/variables";
+
+h1 {
+  color: $color-blue;
+  font-size: 22px;
+
+  @include media-breakpoint-down(xs) {
+    margin-top: 0;
+    font-size: 17px;
+  }
+}
+
+.flier-nav-container, .flier-container {
+  text-align: center;
+}
+
+.flier-nav-container {
+  padding-top: 15px;
+
+  @include media-breakpoint-down(xs) {
+    padding-top: 0;
+  }
+
+  .flier-nav {
+    padding: 5px;
+    border: $color-blue solid 1px;
+
+    @include media-breakpoint-down(xs) {
+      border-width: 0;
+    }
+  }
+}
+
+
+.flier-indicators {
+  margin: 10px 0 5px 0;
+  padding: 0;
+  z-index: 15;
+  text-align: center;
+  list-style: none;
+
+  @include media-breakpoint-down(xs) {
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 4px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: $color-white;
+    border: 1px solid $color-blue;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &.active {
+      background-color: $color-blue;
+      border-color: $color-blue;
+    }
+  }
+}
+
+.printer-wrapper {
+  position: absolute;
+  right: 35px;
+  top: 5px;
+
+
+  i {
+    font-size: 50px;
+    color: $color-blue;
+
+    @include media-breakpoint-down(xs) {
+      visibility: hidden;
+    }
+  }
+
+  &:hover {
+    i {
+      color: $color-navy;
+    }
+  }
+
+}

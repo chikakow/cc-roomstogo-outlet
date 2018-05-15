@@ -1,0 +1,58 @@
+@import "../../assets/styles/variables";
+
+:host {
+  color: $color-white;
+  font-size: 18px;
+}
+
+.title {
+  margin: 20px 0 5px 0;
+  text-align: center;
+}
+
+.state-pane {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+
+  .state-col {
+    padding: 20px 10px 0 20px;
+    align-self: flex-start;
+    flex-grow: 1;
+    margin: 0;
+    width: auto;
+
+    @include media-breakpoint-down(md) {
+      width: 30%;
+    }
+
+    @include media-breakpoint-down(xs) {
+      width: 50%;
+    }
+
+    .state {
+      white-space: nowrap;
+    }
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 5px 0 10px 0;
+  padding-left: 0;
+
+
+  li {
+    width: 16%;
+    color: $color-white;
+    margin: 10px 0;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+}

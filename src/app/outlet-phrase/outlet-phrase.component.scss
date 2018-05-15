@@ -1,0 +1,63 @@
+@import "../../assets/styles/variables";
+
+:host {
+
+  text-align: center;
+  color: saturate(lighten($color-green-bg, 10%), 1%);
+  font-size: 14px;
+  font-weight: 700;
+
+  .title {
+
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .outlet-phrases {
+    margin-top: 0;
+    padding: 5px;
+    background-color: $color-purple-lightgrey;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0;
+      background-color: $color-white;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    color: $color-dark-red;
+    font-size: 17px;
+    position: absolute;
+    top: 10px;
+    left: 220px;
+    text-align: left;
+
+  }
+
+  ul.phrase-desc {
+    color: $color-white;
+    font-weight: 300;
+    list-style: none inside;
+    padding-left:0;
+    display: block;
+
+    li:after {
+      content: "\00a0 \00a0 ";
+    }
+
+    li {
+      font-size: 14px;
+      display: inline-block;
+
+      @include media-breakpoint-only(sm) {
+        font-size: 12px;
+      }
+    }
+
+    @include media-breakpoint-up(sm) {
+      display: inline-block;
+      color: $color-darkgray;
+    }
+  }
+}

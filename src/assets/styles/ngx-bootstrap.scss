@@ -1,0 +1,83 @@
+@import "./variables";
+
+//ngx-bootstrap override
+
+.modal-dialog {
+  top: $header-fixed-height;
+
+  @include media-breakpoint-down(xs) {
+    top: $mobile-header-fixed-height;
+  }
+}
+.modal-content {
+  border-radius: 0;
+}
+
+.carousel {
+  margin-top: 10px;
+  display: inline-block; // this makes <carousel> tag 'fit-content' width
+
+  .carousel-indicators {
+    display: none;
+  }
+
+  .carousel-control-prev {
+    left: -100px;
+
+    @include media-breakpoint-down(xs) {
+      left: 0;
+    }
+
+    .icon-prev {
+      margin-left: -25px; // overwriting the default of -10px because we up the font-size.
+
+      @include media-breakpoint-down(xs) {
+        margin-left: -10px;
+      }
+    }
+  }
+
+  .carousel-control-next {
+    right: -100px;
+
+    @include media-breakpoint-down(xs) {
+      right: 0;
+    }
+  }
+
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    font-size: 150px;
+    color: $color-blue;
+    margin-top: -300px;
+
+    @include media-breakpoint-down(xs) {
+      margin-top: -70px;
+      color: $color-white;
+      font-size: 30px;
+    }
+  }
+}
+
+.alert {
+  border-radius: 0;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+//ngx-owl-carousel override
+.owl-carousel {
+
+  .owl-item {
+
+    .item {
+
+      .item-inner {
+        margin: 10px;
+        padding: 15px;
+        box-shadow: $box-shadow;
+        border: solid $color-lightgray .05em;
+        border-radius: $item-border-radius;
+      }
+    }
+  }
+}

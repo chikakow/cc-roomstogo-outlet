@@ -1,0 +1,271 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/animation";
+
+
+header {
+  background-color: white;
+  box-shadow: $header-box-shadow;
+
+  h1 {
+    // it's ok to use this to hide - https://stackoverflow.com/questions/3239202/whats-the-correct-way-to-hide-the-h1-tag-and-not-be-banned-from-google
+    visibility: hidden;
+    font-size: 10px;
+    margin: 0;
+  }
+
+  @include media-breakpoint-down(xs){
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    z-index: 1000;
+  }
+}
+
+.switch-site {
+  background: $color-blue;
+  height: $switch-site-height;
+
+  @include media-breakpoint-down(xs) {
+    height: $mobile-switch-site-height;
+    text-align: center;
+  }
+
+  div {
+    height: 100%;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    li {
+      display: inline-block;
+      width: 160px;
+      font-size: 14px;
+      height: 100%;
+      background: $color-navy;
+      color: $color-white;
+      margin-right: 5px;
+      overflow: hidden;
+      text-align: center;
+      padding-top: 10px;
+      font-weight: 600;
+      text-decoration: none;
+
+      &.coupon-app-large {
+        width: 240px;
+        background: #405075;
+        visibility: visible;
+        i {
+          margin-right: 5px;
+        }
+
+        @media only screen and (min-width: 1201px) and (max-width: 1325px) {
+          visibility: hidden;
+        }
+      }
+
+      @include media-breakpoint-down(xs) {
+        width: 100px;
+        background-color: transparent;
+        padding-top: 2px;
+        font-size: 14px;
+        text-decoration: underline;
+        font-weight: 200;
+      }
+
+      &.active {
+        background: $color-white;
+        color: $color-blue-font;
+
+        @include media-breakpoint-up(sm) {
+          display: inline-block !important;
+        }
+
+        a {
+          color: $color-blue-font;
+        }
+      }
+    }
+  }
+}
+
+.logo-row {
+  border-bottom: $divider-border-lightgray;
+  border-top: $divider-border-lightgray;
+
+  .logo-pane {
+    height: 100%;
+
+    @include media-breakpoint-down(xs) {
+      padding: 0;
+      position: relative;
+    }
+
+    img {
+      margin: 40px 5px 10px 0;
+
+      @include media-breakpoint-down(sm) {
+        margin: 20px 15px 10px 0;
+      }
+
+      @include media-breakpoint-down(xs) {
+        @include img-keep-ratio-height(40px);
+        margin: 10px auto;
+      }
+    }
+  }
+
+  //.coupon-app-medium {
+  //  position: absolute;
+  //  bottom: 8px;
+  //  left: 15px;
+  //  font-size: 12px;
+  //
+  //  &:hover {
+  //    text-decoration: underline;
+  //  }
+  //
+  //  @media only screen and (min-width: 1326px) {
+  //    visibility: hidden;
+  //  }
+  //}
+
+  .store-locator-medium {
+    position: absolute;
+    bottom: 8px;
+    left: 15px;
+    font-size: 14px;
+    color: $color-blue;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.hamburger-close {
+  font-size: 30px;
+  color: $color-blue;
+  margin-top: 12px;
+  margin-left: 10px;
+  width: 25px;
+}
+
+.store-locator-mobile {
+  font-size: 26px;
+  color: $color-blue;
+  text-align: right;
+  width: 30px;
+}
+
+.hamburger-close, .store-locator-mobile {
+  display: inline-block;
+}
+
+.store-region-pane {
+  position: absolute;
+  right: 0;
+  top: -40px;
+  color: $color-white;
+  background-color: $color-blue;
+  padding: 0px 9px;
+  width: 250px;
+  cursor: pointer;
+
+  @include media-breakpoint-only(sm) {
+    top: -62px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    left: -10px;
+    top: 0px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+  }
+
+  .change-location-desc {
+
+    margin-top: 15px;
+
+    @include media-breakpoint-only(sm) {
+      margin-top: 22px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      display: inline-block;
+      width: 30%;
+      color: $color-blue;
+      margin-left: 7px;
+      font-size: 9px;
+      margin-top: 20px;
+    }
+
+    @include media-breakpoint-down(xxs) {
+      visibility: hidden;
+    }
+
+    div:first-child {
+
+    }
+
+    div:last-child {
+      font-size: 10px;
+      white-space: nowrap;
+      @include media-breakpoint-down(xs){
+        display: none;
+      }
+    }
+  }
+
+  button.change-location {
+    cursor: pointer;
+    color: $color-white;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-position: 6px 7px;
+    background-color: transparent;
+    border: none;
+    width: 53px;
+
+    height: 58px;
+    padding: 0;
+    display: inline-block;
+    float: left;
+    font-size: 25px;
+    margin-right: 10px;
+
+    @include media-breakpoint-only(sm) {
+      background-position: 6px 11px;
+      width: 46px;
+      height: 49px;
+      padding: 0;
+      font-size: 24px;
+      margin-top: 10px;
+      padding-top: 12px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      color: $color-blue;
+      margin: 3px 0 0 20%;
+      font-size: 20px;
+    }
+  }
+}
+
+.location-modal {
+  label, input {
+    display: inline-block;
+    width: 80%;
+  }
+}
+
+
+

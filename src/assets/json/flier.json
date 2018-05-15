@@ -1,0 +1,194 @@
+[
+  { "routerUrl": "weekly/se",
+    "content": {
+      "title": "",
+      "state": "GA",
+      "images": [
+        {
+          "url": "specials/weekly/se/1.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "GA"
+        },
+        {
+          "url": "specials/weekly/se/2.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "GA"
+        },
+        {
+          "url": "specials/weekly/se/3.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "GA"
+        },
+        {
+          "url": "specials/weekly/se/4.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "GA"
+        },
+        {
+          "url": "specials/weekly/se/5.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "GA"
+        }
+      ]
+    }
+  },
+  { "routerUrl": "mattress/se",
+    "content": {
+      "title": "",
+      "state": "GA",
+      "images": [
+        {
+          "url": "specials/mattress/se/1.png",
+          "alt":"Mattress Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "GA"
+        }
+      ]
+    }
+  },
+  { "routerUrl": "weekly/fl",
+    "content": {
+      "title": "",
+      "state": "FL",
+      "images": [
+        {
+          "url": "specials/weekly/fl/1.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "FL"
+        },
+        {
+          "url": "specials/weekly/fl/2.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "FL"
+        },
+        {
+          "url": "specials/weekly/fl/3.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "FL"
+        },
+        {
+          "url": "specials/weekly/fl/4.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "FL"
+        },
+        {
+          "url": "specials/weekly/fl/5.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "FL"
+        }
+      ]
+    }
+  },
+  { "routerUrl": "mattress/fl",
+    "content": {
+      "title": "",
+      "state": "FL",
+      "images": [
+        {
+          "url": "specials/mattress/fl/1.png",
+          "alt":"Mattress Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "FL"
+        }
+      ]
+    }
+  },
+  { "routerUrl": "weekly/tx",
+    "content": {
+      "title": "",
+      "state": "TX",
+      "images": [
+        {
+          "url": "specials/weekly/tx/1.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        },
+        {
+          "url": "specials/weekly/tx/2.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        },
+        {
+          "url": "specials/weekly/tx/3.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        },
+        {
+          "url": "specials/weekly/tx/4.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        },
+        {
+          "url": "specials/weekly/tx/5.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        }
+      ]
+    }
+  },
+  { "routerUrl": "mattress/tx",
+    "content": {
+      "title": "",
+      "state": "TX",
+      "images": [
+        {
+          "url": "specials/mattress/tx/1.png",
+          "alt":"Mattress Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,20 @@
+<nav (click)="navClicked($event);" id="mainNav">
+  <app-speicals-link *ngIf="!menuService.isVertical"></app-speicals-link>
+  <ul>
+    <li *ngFor="let specialItem of menuService.specialsMenuItems">
+      <app-menu-item *ngIf="menuService.isVertical" class="weekly-special"
+                     [item]="specialItem"
+                     [ngClass]="{'vertical-menu': menuService.isVertical }"
+                     [menuIndex]="0">
+      </app-menu-item>
+    </li>
+    <li *ngFor="let item of menuService.items; let i = index;">
+      <app-menu-item
+        [item]="item"
+        [ngClass]="{'vertical-menu': menuService.isVertical }"
+        [menuIndex]="i">
+
+      </app-menu-item>
+    </li>
+  </ul>
+</nav>

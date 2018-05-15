@@ -1,0 +1,15 @@
+@import "../../../assets/styles/variables";
+
+
+.coupon-app-wrapper {
+  height: $mobile-header-coupon-app-height;
+
+  i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 21px;
+    color: $color-darkgray;
+    z-index: $zindex-dropdown;
+  }
+}

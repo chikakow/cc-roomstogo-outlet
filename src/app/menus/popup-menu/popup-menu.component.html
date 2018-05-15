@@ -1,0 +1,10 @@
+
+<li *ngFor="let item of menu; let i = index;" >
+  <app-menu-item
+    [ngClass]="{'vertical-menu': menuService.isVertical}"
+    [item]="item"
+    [menuIndex]="i"
+    class="in-popup"
+  ></app-menu-item>
+</li>
+<!--<img [src]="submenuLink" class="img-thumbnail submenu-image" *ngIf="!menuService.isVertical" />-->

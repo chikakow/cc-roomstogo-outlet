@@ -1,0 +1,12 @@
+<div class="row sales-container">
+  <div class="col-xs-2"></div>
+  <div class="col-xs-8 sales-desc" [ngClass]="{'expanded': expanded, 'collapsed': !expanded}">
+    <div class="collapsed" *ngIf="!expanded"><i class="ion-ios-snowy"></i> &nbsp;&nbsp;Big Christmas Sales!&nbsp;&nbsp; <i class="ion-ios-snowy"></i></div>
+    <div *ngIf="expanded">25% off store wide all items. All rewards members 30% off with code sent to emails.</div>
+  </div>
+  <div class="col-xs-2 expandable-pane">
+    <span class="expandable-button" (click)="expandCollapse()">[<i
+      [ngClass]="{'ion-android-remove': expanded, 'ion-android-add': !expanded}"></i>]</span>
+  </div>
+</div>
+

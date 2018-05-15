@@ -1,0 +1,19 @@
+<div class="menu-item"
+     [ngClass]="{'vertical-menu': menuService.isVertical, 'open': mouseInPopup}">
+  <a  *ngIf="item.route" routerLink="{{routeLink}}">
+  <span>{{ item.text.toUpperCase() }}</span>
+  <i  *ngIf="item.submenu" class="rtg-icon-arrow-right" [ngClass]="{'open': mouseInPopup }" ></i>
+  </a>
+  <a *ngIf="item.href" [href]="item.href" target="_blank" >
+    <span>{{ item.text.toUpperCase() }}</span>
+    <i  *ngIf="item.submenu" class="rtg-icon-arrow-right" [ngClass]="{'open': mouseInPopup }" ></i>
+  </a>
+</div>
+<app-popup-menu
+  [menu]="item.submenu"
+  [ngClass]="{'vertical-menu': menuService.isVertical, 'hidden': !openSubmenu, 'visible': openSubmenu}"
+  (mouseleave)="onPopupMouseLeave()"
+  (mouseenter)="onPopupMouseEnter()"
+  [style.left.px]="popupLeftPosition"
+  [submenuLink]="item.submenuLink"
+></app-popup-menu>

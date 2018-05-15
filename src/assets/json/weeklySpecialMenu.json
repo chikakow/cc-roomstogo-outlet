@@ -1,0 +1,14 @@
+[
+  {
+    "text": "Weekly Specials",
+    "icon": "",
+    "route": "weekly",
+    "submenu": null
+  },
+  {
+    "text": "Mattress Specials",
+    "icon": "",
+    "route": "mattress",
+    "submenu": null
+  }
+]

@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:b,300,400,500,600,ng 700,400italic');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import "./variables";
+@import "./card";
+@import "./ngx-bootstrap";
+@import "./agm-map";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat','Open Sans', sans-serif;
+  @include media-breakpoint-down(xs) {
+    padding-top: $mobile-header-fixed-height;
+  }
+
+  @extend .smooth-text;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.row.gray-border-title {
+  text-align: left;
+  background-color: $color-lightgray; // rgba(215,215,210, .3); // <-- use this once we have category image.
+
+  @include media-breakpoint-down(xs) {
+    text-align: center;
+  }
+
+  h1 {
+    margin-top: 15px;
+    color: darken($color-blue-font, 5%);
+    font-weight: 600;
+    font-size: 24px;
+    @include media-breakpoint-down(xs) {
+      margin-top: 8px;
+      margin-left: 0;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}
+
+h2 {
+  font-size: 27px;
+  @include media-breakpoint-down(xs) {
+    font-size: 23px;
+  }
+}
+h3 {
+  font-size: 24px;
+  @include media-breakpoint-down(sm) {
+    font-size: 20px;
+  }
+}
+
+h4 {
+  font-size: 21px;
+  letter-spacing: 1px;
+  @include media-breakpoint-down(sm) {
+    font-size: 18px;
+  }
+}
+
+a, a:hover, a:visited, a:active, a:link {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+input[type="button"], input[type="button"]:focus, input[type="button"]::-moz-focus-inner, button, button::-moz-focus-inner {
+  color: inherit;
+  border: none;
+  outline: none;
+}
+
+.no-gutters {
+  margin: 0;
+  padding: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.no-padding-horizontal {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+app-root {
+  align-self: stretch;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  justify-content: space-between;
+  height: 100%;
+}
+
+//bootstrap 3 override
+.btn {
+  border-radius: 0;
+
+  &.btn-default {
+    background-color: $color-blue;
+    color: $color-white;
+    text-transform: uppercase;
+  }
+
+  &:disabled  {
+
+    &:hover {
+      color: $color-gray;
+    }
+  }
+}
+
+// bootstrap helper
+.row {
+
+  &.reset-margin {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+.form-control {
+  border-radius: 0;
+}
+
+// in-house flex used when items height needs to be same.  Needs to support flexwrap using Modernizr .flexwrap to limit to only browser with flexwrap support.
+// this should be used with bootstrap row and col system for fallback in case the browser doesn't support flexwrap like iOS 6.
+.flexwrap .flexible-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  margin-right: -15px;
+  margin-left: -15px;
+
+  .flexible-col {
+    flex: 1 0 25% ; // this is what fixes on iOS 8 and 7.  Does not support iOS 6. For IE this is translated to be 50% for some reason.
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include media-breakpoint-down(md) {
+      flex: 1 0 33.3%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex: 1 0 50%;
+    }
+
+    @include media-breakpoint-down(xs) {
+      flex: 1 0 100%;
+    }
+  }
+}
+
+.top-padding {
+  padding-top: $row-col-spacing-height;
+}
+
+.bottom-padding {
+  padding-bottom: $row-col-spacing-height
+}
+
+.top-margin {
+  margin-top: $row-col-spacing-height
+}
+
+.bottom-margin {
+  margin-bottom: $row-col-spacing-height
+}
+
+// global styling
+.terms-container {
+  padding: 30px 40px 0 40px;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.online-sales {
+  text-align: center;
+  color: $color-dark-red;
+  background-color: $color-super-lightgray;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  padding-left:  0;
+  font-size: 19px;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 15px;
+  }
+}
+
+//chrome button
+button:focus {outline:0;}
+
+// hack for browser safari 7, 8, 9 measures the min-height wrong
+.logo-row {
+  height: $logo-row-height;
+  height: $logo-row-height;
+
+  @include media-breakpoint-down(xs){
+    min-height: $mobile-logo-row-height;
+    height: $mobile-logo-row-height;
+  }
+}
+
+// that's because .header in app.component.scss no longer have  flex: 0 1 auto; // allowing it to shrink but  flex: 0 0 auto; now,
+// below hack is not needed. But if we need to put it back, put the code back.
+
+//.safari-7, .safari-8, .safari-9 {
+//
+//  .logo-row {
+//    min-height: $logo-row-height-safari-7-8-9;
+//    height: $logo-row-height-safari-7-8-9;
+//  }
+//}
+
+// app-contents generated innerHtml needs to be at global style level since in the component level html is rendered before article is available.
+app-contents {
+  .detail {
+
+    > [class*="col-"] {
+
+      article {
+
+        p {
+
+          // from here is generated stuff.
+
+          a {
+            color: $color-blue;
+          }
+
+          @include media-breakpoint-up(sm) {
+
+            ul {
+              white-space: normal;
+              list-style-type: disc;
+
+              li {
+                //display: inline-block;
+                float: left;
+                width: 50%;
+                padding-left: 10px;
+              }
+            }
+          }
+
+          @include media-breakpoint-up(md) {
+
+            ul {
+
+              li {
+                width: 33%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

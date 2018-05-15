@@ -1,0 +1,40 @@
+<div class="products-wrapper">
+  <a *ngIf="products?.length > 0" [href]="subcategory?.rtgLink ? subcategory?.rtgLink : rtgLinkDefault" target="_blank" rel="nofollow">
+    <h4 class="subcategory">{{ subcategory?.name }}</h4>
+  </a>
+  <span *ngIf="products?.length > 0" class="view-all">
+    <a [href]="subcategory?.rtgLink ? subcategory?.rtgLink : rtgLinkDefault" target="_blank" rel="nofollow">Shop All <span class="hidden-xs">{{ subcategory?.name }}</span></a>
+  </span>
+  <owl-carousel *ngIf="isBrowser" #owlElement
+                [options]="{items: this.numOfItems, dots: false, nav: false,
+                onDrag: owlDragStart.bind(this),
+                onDragged: owlDragEnd.bind(this),
+                onPrevious: owlPrevious.bind(this)}"
+                [carouselClasses]="[]">
+    <div class="item" *ngFor="let product of products;let i = index">
+      <div class="item-overlay" (click)="itemClick(product?.product_url)" *ngIf="!menuService.isVertical">
+        <a class="buy-now" target="_blank">
+          <span>Buy Now<div>at RoomsToGo.com</div></span>
+        </a>
+        <a class="view-detail" target="_blank">
+          <span>View Detail</span>
+        </a>
+      </div>
+      <div class="item-inner">
+        <img class="img-responsive" [src]="product?.image_url" [alt]="product?.title" [title]="product?.title">
+          <h5 class="title">{{product?.title}}</h5>
+          <a (click)="itemClick(product?.product_url)" target="_blank" rel="nofollow"><h5 class="view-detail">View Detail</h5></a>
+          <a (click)="itemClick(product?.product_url)" target="_blank" rel="nofollow"><h5 class="buy-online">Buy Now<div class="hidden-sm hidden-md hidden-lg">at RoomsToGo.com</div></h5></a>
+          <h5 class="price">Sale {{ product?.price| currency: 'USD': 'symbol': '1.2-2'}}</h5>
+      </div>
+    </div>
+  </owl-carousel>
+</div>
+<div class="carousel-nav" *ngIf="products && products.length > 0">
+  <button class="prev" (click)="previous()">
+    <i class="ion-android-arrow-dropleft"></i>
+  </button>
+  <button class="next" (click)="next()">
+    <i class="ion-android-arrow-dropright"></i>
+  </button>
+</div>

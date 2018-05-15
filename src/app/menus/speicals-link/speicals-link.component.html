@@ -1,0 +1,8 @@
+<ul class="weekly-menu">
+  <li *ngFor="let specialItem of menuService.specialsMenuItems">
+    <app-menu-item class="weekly-special"
+                   [item]="specialItem"
+                   [menuIndex]="0"
+    ></app-menu-item>
+  </li>
+</ul>

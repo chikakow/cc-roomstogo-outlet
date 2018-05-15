@@ -1,0 +1,7 @@
+<div class="container-fluid bg">
+  <div class="row">
+    <div class="col-xs-12 coupon-wrapper" *ngFor="let coupon of coupons">
+      <img class="coupon img-responsive" [src]="'../../assets/images/'+coupon.url" [alt]="coupon.alt">
+    </div>
+  </div>
+</div>

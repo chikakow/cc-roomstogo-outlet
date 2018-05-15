@@ -1,0 +1,104 @@
+
+@mixin animation ($delay, $duration, $animation) {
+  //-webkit-animation-delay: $delay;
+  //-webkit-animation-duration: $duration;
+  //-webkit-animation-name: $animation;
+  //-webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+  //
+  //-moz-animation-delay: $delay;
+  //-moz-animation-duration: $duration;
+  //-moz-animation-name: $animation;
+  //-moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+  //
+  //-o-animation-delay: $delay;
+  //-o-animation-duration: $duration;
+  //-o-animation-name: $animation;
+  //-o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $animation;
+  animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+}
+
+
+@mixin keyframe ($animation_name) {
+  //@-webkit-keyframes #{$animation_name} {
+  //  @content;
+  //}
+  //
+  //@-moz-keyframes #{$animation_name} {
+  //  @content;
+  //}
+  //
+  //@-o-keyframes #{$animation_name} {
+  //  @content;
+  //}
+
+  @keyframes #{$animation_name} {
+    @content;
+  }
+}
+
+/*
+    Animation usage:
+ */
+
+@include keyframe(move-to-left) {
+  from {
+    left: 0;
+  }
+  to {
+    left: $vertical-menu-width * -1;
+  }
+}
+
+@include keyframe(move-to-right) {
+  from {
+    left: $vertical-menu-width * -1;
+  }
+  to {
+    left: 0;
+  }
+}
+
+//**********************
+// transition mixins
+//**********************
+@mixin transition($timing-function, $property, $duration, $delay) {
+
+  //-webkit-transition-timing-function: $timing-function;
+  //-moz-transition-timing-function: $timing-function;
+  //-o-transition-timing-function: $timing-function;
+  //-ms-transition-timing-function: $timing-function;
+  transition-timing-function: $timing-function;
+
+  //@if $property == filter {
+  //  -webkit-transition-property: -webkit-filter;
+  //  -moz-transition-property: -moz-filter;
+  //  -o-transition-property: -o-filter;
+  //  -ms-transition-property: -ms-filter;
+  //}
+  //@else {
+  //  -webkit-transition-property: $property;
+  //  -moz-transition-property: $property;
+  //  -o-transition-property: $property;
+  //  -ms-transition-property: $property;
+  //}
+  transition-property: $property;
+
+  //-webkit-transition-duration: $duration;
+  //-moz-transition-duration: $duration;
+  //-o-transition-duration: $duration;
+  //-ms-transition-duration: $duration;
+  transition-duration: $duration;
+
+  //-webkit-transition-delay: $delay;
+  //-moz-transition-delay: $delay;
+  //-o-transition-delay: $delay;
+  //-ms-transition-delay: $delay;
+  transition-delay: $delay;
+
+}
+
+

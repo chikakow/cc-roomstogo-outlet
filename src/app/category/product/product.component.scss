@@ -1,0 +1,212 @@
+@import "../../../assets/styles/variables";
+
+.products-wrapper {
+  margin-top: 25px;
+  height: 100%;
+
+  .subcategory {
+    padding-left: 10px;
+    color: $color-blue;
+    font-weight: 500;
+    display: inline;
+  }
+
+  .view-all {
+    position: absolute;
+    font-size: 16px;
+    right: 0;
+    top: 20px;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @include media-breakpoint-down(xs) {
+      top: 7px;
+      right: 5px;
+    }
+  }
+
+
+  @include media-breakpoint-down(md) {
+    margin-top: 15px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    margin-top: 10px;
+  }
+
+  .item-inner {
+    padding: 0;
+    overflow: hidden;
+
+    h5 {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    img {
+      padding: 5px 5px 0 5px;
+    }
+
+    .title {
+      height: 55px;
+      overflow: hidden;
+    }
+
+    .view-detail {
+      text-align: right;
+      color: $color-gray;
+    }
+
+    .price {
+      height: 15px;
+      width: 60px;
+      color: $color-dark-red;
+      position: absolute;
+      right: 50px;
+      bottom: 36px;
+      font-size: 17px;
+      line-height: 11px;
+      white-space: pre-wrap;
+      text-align: right;
+
+      @include media-breakpoint-up(sm) {
+        width: 160px;
+        right: 10px;
+        bottom: 10px;
+        font-size: 16px;
+      }
+
+      @include media-breakpoint-only(md) {
+        font-size: 15px;
+      }
+
+      @include media-breakpoint-only(xl) {
+        font-size: 20px;
+      }
+
+    }
+
+    .buy-online {
+      width: 55%;
+      float: left;
+      color: $color-blue;
+
+      @include media-breakpoint-down(xs) {
+        padding: 8px;
+        margin: 0 0 12px 12px;
+        background-color: $color-blue;
+        color: $color-white;
+        text-align: center;
+
+        div {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .item-overlay {
+    cursor: pointer;
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: $zindex-dropdown-backdrop;
+    border-radius: $item-border-radius;
+    text-align: center;
+
+    @include hex-to-rgba(background-color, $color-black, 0);
+
+    a {
+      display: block;
+
+      span {
+        visibility: hidden;
+        //width: 180px;
+        background-color: lighten($color-green, 5%);
+        color: $color-white;
+        padding: 10px 20px;
+        box-shadow: $box-shadow;
+        font-size: 17px;
+        display: inline-block;
+
+        div {
+          font-size: 15px;
+        }
+      }
+
+      &.buy-now {
+        margin-top: 40%;
+      }
+
+      &.view-detail {
+        margin-top: 25px;
+
+        span {
+          background-color: transparent;
+          box-shadow: none;
+          text-decoration: underline;
+          font-size: 16px;
+        }
+      }
+    }
+
+    &:hover, &:active {
+      @include hex-to-rgba(background-color, $color-black, 0.58);
+
+      a.buy-now, a.view-detail {
+        span {
+          visibility: visible;
+        }
+      }
+    }
+
+  }
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: $zindex-dropdown-backdrop;
+
+  button {
+    background: transparent;
+    border: none;
+    position: absolute;
+
+    &.prev {
+      left: -50px;
+
+      @include media-breakpoint-down(xs) {
+        left: -30px;
+      }
+    }
+
+    &.next {
+      right: -50px;
+
+      @include media-breakpoint-down(xs) {
+        right: -30px;
+      }
+    }
+
+    i {
+      font-size: 45px;
+      color: $color-blue;
+
+      &:hover {
+        color: $color-darkgray;
+      }
+
+      @include media-breakpoint-down(xs) {
+        font-size: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 hidden-sm hidden-md hidden-lg no-padding-horizontal">
+      <app-outlet-phrase></app-outlet-phrase>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 hidden-sm hidden-md hidden-lg no-padding-horizontal">
+      <app-speicals-link></app-speicals-link>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 hidden-sm hidden-md hidden-lg flier-nav-container">
+      <div class="flier-nav">
+        <ol class="flier-indicators">
+          <li *ngFor="let img of images; let i = index" (click)="activateCarousel(i)"
+              [class.active]="i === activeSlideIndex"></li>
+        </ol>
+        <!--<div class="printer-wrapper" (click)="print('carousel')">-->
+          <!--<i class="printer ion-ios-printer"></i>-->
+        <!--</div>-->
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 flier-container">
+      <h1>{{ h1Text }}</h1>
+      <carousel [(activeSlide)]="activeSlideIndex" [interval]="60000">
+        <slide *ngFor="let img of images">
+          <img [src]="'../../assets/images/' + img.url" [alt]="img.alt" [title]="img.title" class="img-responsive" >
+          <div class="carousel-caption">
+          </div>
+        </slide>
+      </carousel>
+    </div>
+  </div>
+</div>

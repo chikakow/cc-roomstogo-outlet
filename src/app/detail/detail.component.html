@@ -1,0 +1,82 @@
+<main class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 hidden-sm hidden-md hidden-lg no-padding-horizontal">
+      <app-outlet-phrase></app-outlet-phrase>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 hidden-sm hidden-md hidden-lg no-padding-horizontal">
+      <app-speicals-link></app-speicals-link>
+    </div>
+  </div>
+  <div class="row online-sales">
+    <div class="col-xs-12 col-md-11 col-md-offset-1">
+      <h3 class="hidden-xs">Visit your <a href="https://www.roomstogo.com/storelocator" target="_blank" rel="nofollow">local RoomsToGo Outlet</a> store to see the latest variety. Trucks arriving daily.</h3>
+      <h3 class="hidden-sm hidden-md hidden-lg">Visit your <a href="https://m.roomstogo.com/storelocator/" target="_blank" rel="nofollow">local RoomsToGo Outlet</a> store to see the latest variety.<br/>Trucks arriving daily.</h3>
+      <h2>OR<br/>SHOP ROOMS TO GO VALUES ONLINE</h2>
+    </div>
+  </div>
+  <div class="row gray-border-title">
+    <div class="col-xs-12 col-md-11 col-md-offset-1 main-image-pane">
+      <!--[style.background-image]="'url(' + bannerProduct?.image_url +')'"-->
+      <div><h1> {{ detail?.title.toUpperCase() }}</h1></div>
+    </div>
+  </div>
+
+  <section class="row">
+    <div class="col-xs-12 col-lg-10 col-lg-offset-1 save-banner-col">
+      <a class="hidden-xs" [href]="bannerImageDesktop?.link" target="_blank" rel="nofollow">
+        <img src="../../assets/images/banners/Generic_Banner.jpg"
+             alt="Furniture near cost, at cost, below cost. Samples, specials, scratch & dent, discounts."
+             class="img-responsive saving-banner">
+      </a>
+      <a class="hidden-sm hidden-md hidden-lg" [href]="bannerImageMobile?.link" target="_blank" rel="nofollow">
+        <img src="../../assets/images/banners/Generic_Banner_mobile.jpg"
+             alt="Furniture near cost, at cost, below cost. Samples, specials, scratch & dent, discounts."
+             class="img-responsive saving-banner">
+      </a>
+    </div>
+  </section>
+
+  <!--<section class="row">-->
+    <!--<div class="col-xs-12 col-lg-10 col-lg-offset-1  save-banner-col">-->
+      <!--<a href="https://www.roomstogo.com/furniture/Clearance/_/N-w8e2wu" target="_blank" rel="nofollow">-->
+        <!--<img src="../../assets/images/banners/FlashSale.jpg"-->
+             <!--alt="Furniture near cost, at cost, below cost. Samples, specials, scratch & dent, discounts."-->
+             <!--class="hidden-xs img-responsive saving-banner">-->
+        <!--<img src="../../assets/images/banners/FlashSale_mobile.jpg"-->
+             <!--alt="Furniture near cost, at cost, below cost. Samples, specials, scratch & dent, discounts."-->
+             <!--class="hidden-sm hidden-md hidden-lg img-responsive saving-banner">-->
+      <!--</a>-->
+    <!--</div>-->
+  <!--</section>-->
+
+  <section class="row flexible-row">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 flexible-col top-padding" *ngFor="let product of products">
+      <a rel="nofollow" (click)="itemClick(product?.product_url)">
+        <div class="item-overlay"  *ngIf="!menuService.isVertical">
+          <div class="buy-now" target="_blank">
+            <span>Buy Now<div>at RoomsToGo.com</div></span>
+          </div>
+          <div class="view-detail" target="_blank">
+            <span>View Detail</span>
+          </div>
+        </div>
+      </a>
+      <div class="card">
+        <div class="card-image" [ngClass]="{'padding': addPaddingOnImage}">
+          <img class="img-responsive" [src]="product?.image_url" [alt]="product?.title" [title]="product?.title">
+        </div>
+        <div class="card-content">
+          {{ product?.title }}
+        </div>
+        <div class="card-action">
+          <a (click)="itemClick(product?.product_url)" target="_blank" rel="nofollow"><h5 class="view-detail">View Detail</h5></a>
+          <a (click)="itemClick(product?.product_url)" target="_blank" rel="nofollow"><h5 class="buy-online">Buy Now<div class="hidden-sm hidden-md hidden-lg">at RoomsToGo.com</div></h5></a>
+          <h5 class="price">Sale {{ product?.price| currency: 'USD': 'symbol': '1.2-2'}}</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  <app-contents [details]="detail?.details"></app-contents>
+</main>

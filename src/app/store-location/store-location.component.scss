@@ -1,0 +1,158 @@
+@import "../../assets/styles/variables";
+
+agm-map {
+
+  height: 400px;
+
+  @include media-breakpoint-up(md) {
+    height: 700px;
+  }
+}
+
+.row.gray-border-title {
+
+  h1 {
+
+    @include media-breakpoint-down(xs) {
+      font-size: 17px;
+    }
+  }
+}
+
+.map-wrapper {
+  position: relative;
+  margin: 15px 0;
+
+
+  .legend {
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    z-index: $zindex-dropdown-backdrop;
+    font-size: 14px;
+    background-color: $color-white;
+    box-shadow: $box-shadow;
+
+    .store-image {
+      height: 80px;
+      display: inline;
+
+      img {
+        display: block;
+        margin: auto;
+        @include img-keep-ratio-height(163px);
+      }
+    }
+
+    .legend-detail {
+      padding: 5px 10px;
+
+      .name {
+        color: $color-blue-font;
+        font-weight: bold;
+        font-size: 17px;
+      }
+
+      .street1 {
+        margin-top: 5px;
+      }
+
+      .city-state-zip {
+      }
+
+      .phone, .direction {
+        font-size: 14px;
+        margin-top: 5px;
+        color: $color-blue-font;
+        position: relative;
+        height: 20px;
+        width: 145px;
+        display: inline-block;
+
+        span {
+
+        }
+
+        i {
+          vertical-align: middle;
+          font-size: 22px;
+          margin-right: 5px;
+        }
+      }
+
+      .direction {
+        width: 100px;
+      }
+    }
+  }
+}
+
+.store-detail {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .store-table {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+    color: $color-darkgray;
+    font-size: 15px;
+
+    &.last {
+      margin-bottom: 25px;
+    }
+
+    .title {
+      width: 100%;
+      font-weight: bold;
+      font-size: 16px;
+      color: $color-blue-font;
+      margin-bottom: 5px;
+
+      i {
+        font-size: 22px;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+
+      &.holiday {
+
+        i {
+          vertical-align: text-bottom;
+        }
+      }
+
+      &.weekly {
+        margin-bottom: -20px;
+      }
+
+      &.weekly, &.mattress {
+        color: $color-green;
+        font-size: 15px;
+
+        i {
+          font-size: 24px;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .day {
+      width: 130px;
+      display: inline-block;
+      text-align: left;
+      margin: 1px auto;
+    }
+
+    .open-close {
+      width: 80%;
+      width: calc(100% - 130px);
+      display: inline-block;
+      margin: 1px auto;
+    }
+  }
+}
+
+
+
+

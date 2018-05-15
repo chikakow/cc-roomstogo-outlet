@@ -1,0 +1,146 @@
+[
+  {
+    "city": "Houston",
+    "state": "TX",
+    "contentWeekly": {
+      "title": "Weekly Specials - Houston, Texas",
+      "state": "TX",
+      "images": [
+        {
+          "url": "specials/weekly/tx/houston/1.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        },
+        {
+          "url": "specials/weekly/tx/houston/2.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        },
+        {
+          "url": "specials/weekly/tx/houston/3.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        }
+      ]
+    },
+    "contentMattress": {
+      "title": "Mattress Specials - Houston, Texas",
+      "state": "TX",
+      "images": [
+        {
+          "url": "specials/mattress/tx/houston/1.png",
+          "alt":"Mattress Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        }
+      ]
+    }
+  },
+  {
+    "city": "Humble",
+    "state": "TX",
+    "contentWeekly": {
+      "title": "Weekly Specials - Humble, Texas",
+      "state": "TX",
+      "images": [
+        {
+          "url": "specials/weekly/tx/houston/1.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        },
+        {
+          "url": "specials/weekly/tx/houston/2.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        },
+        {
+          "url": "specials/weekly/tx/houston/3.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        }
+      ]
+    },
+    "contentMattress": {
+      "title": "Mattress Specials - Humble, Texas",
+      "state": "TX",
+      "images": [
+        {
+          "url": "specials/mattress/tx/houston/1.png",
+          "alt":"Mattress Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        }
+      ]
+    }
+  },
+  {
+    "city": "Brookshire",
+    "state": "TX",
+    "contentWeekly": {
+      "title": "Weekly Specials - Brookshire, Texas",
+      "state": "TX",
+      "images": [
+        {
+          "url": "specials/weekly/tx/houston/1.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        },
+        {
+          "url": "specials/weekly/tx/houston/2.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        },
+        {
+          "url": "specials/weekly/tx/houston/3.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        }
+      ]
+    },
+    "contentMattress": {
+      "title": "Mattress Specials - Brookshire, Texas",
+      "state": "TX",
+      "images": [
+        {
+          "url": "specials/mattress/tx/houston/1.png",
+          "alt":"Mattress Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,30 @@
+<main class="container-fluid category-wrapper">
+  <div class="row">
+    <div class="col-xs-12 hidden-sm hidden-md hidden-lg no-padding-horizontal">
+      <app-outlet-phrase></app-outlet-phrase>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 hidden-sm hidden-md hidden-lg no-padding-horizontal">
+      <app-speicals-link></app-speicals-link>
+    </div>
+  </div>
+  <div class="row online-sales">
+    <div class="col-xs-12 col-md-11 col-md-offset-1">
+      <h3 class="hidden-xs">Visit your <a href="https://www.roomstogo.com/storelocator" target="_blank" rel="nofollow">local RoomsToGo Outlet</a> store to see the latest variety. Trucks arriving daily.</h3>
+      <h3 class="hidden-sm hidden-md hidden-lg">Visit your <a href="https://m.roomstogo.com/storelocator/" target="_blank" rel="nofollow">local RoomsToGo Outlet</a> store to see the latest variety.<br>Trucks arriving daily.</h3>
+      <h2>OR<br/>SHOP ROOMS TO GO VALUES ONLINE</h2>
+    </div>
+  </div>
+  <div class="row gray-border-title">
+    <div class="col-xs-12 col-md-11 col-md-offset-1">
+      <h1>{{ detail?.title.toUpperCase() }}</h1>
+    </div>
+  </div>
+  <section class="row no-gutters subcategory" *ngFor="let category of subcategories">
+    <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
+      <app-product *ngIf="!!category" [subcategory]="category"></app-product>
+    </div>
+  </section>
+  <app-contents [details]="detail?.details" ></app-contents>
+</main>

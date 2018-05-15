@@ -1,0 +1,122 @@
+<ng-template #locatorLink>
+  <div class="row" (click)="openModal(changeLocationTemplate)">
+    <div class="col-xs-12">
+      <button class="change-location"
+              [style.background-image]="'url(../../assets/svgs/state_' + userState + desktop +'.svg)'">
+        {{ userState }}
+      </button>
+      <div class="change-location-desc">
+        <div>CHANGE LOCATION</div>
+        <div>View Outlet products in your area</div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<header class="container-fluid" id="mainHeader">
+  <div class="row switch-site">
+    <div class="col-xs-12 col-md-11 col-md-offset-1">
+      <ul>
+        <li class="active hidden-xs">
+          <a routerLink="/">Rooms To Go Outlet</a>
+        </li>
+        <a href="https://www.roomstogo.com" target="_blank" rel="nofollow">
+          <li>
+            Rooms To Go
+          </li>
+        </a>
+        <a href="https://www.roomstogokids.com" target="_blank" target="_blank" rel="nofollow">
+          <li>
+            Kids & Teens
+          </li>
+        </a>
+        <!--<a class="store-locator-link" href="https://www.roomstogo.com/storelocator" target="_blank" rel="nofollow" >-->
+          <!--<li class="store-locator hidden-xs hidden-sm hidden-md">-->
+            <!--<i class="ion-android-pin store-locator-icon"></i>-->
+            <!--<span class="store-locator-text">&nbsp;Store Locator</span>-->
+          <!--</li>-->
+        <!--</a>-->
+        <a href="https://roomstogocoupons.com" target="_blank">
+          <li class="coupon-app-large hidden-xs hidden-sm hidden-md">
+            <i class="ion-android-apps"></i>
+            <span>Rooms To Go Coupon App</span>
+          </li>
+        </a>
+      </ul>
+    </div>
+  </div>
+  <div class="row no-gutters" *ngIf="menuService.isVertical">
+    <app-coupon-app></app-coupon-app>
+  </div>
+  <div class="row no-gutters" *ngIf="menuService.isVertical">
+    <div class="col-xs-12">
+      <!--<app-sales></app-sales>-->
+    </div>
+  </div>
+  <div class="row logo-row">
+    <div class="col-xs-4 hidden-sm hidden-md hidden-lg">
+      <span class="hamburger-close"
+            [ngClass]="{'ion-android-menu': !menuService.isOpen, 'ion-android-close': menuService.isOpen}"
+            (click)="menuService.toggleSideNav()">
+      </span>
+      <!--<span class="store-locator-mobile">-->
+        <!--<a class="store-locator-link" href="https://m.roomstogo.com/storelocator/" target="_blank" rel="nofollow">-->
+        <!--<i class="ion-android-pin store-locator-icon"></i>-->
+        <!--<span class="hidden-xs hidden-sm hidden-md store-locator-text">Store Locator</span>-->
+        <!--</a>-->
+      <!--</span>-->
+    </div>
+    <div class="col-xs-4 col-sm-12 col-md-11 col-md-offset-1 logo-pane">
+      <img src="../../assets/images/logo.jpeg" alt="Rooms To Go Outlet Logo" title="Rooms To Go Outlet Logo"
+           routerLink="/">
+
+      <app-menu class="hidden-xs" *ngIf="!menuService.isVertical"></app-menu>
+      <app-outlet-phrase *ngIf="!menuService.isVertical"></app-outlet-phrase>
+      <div class="hidden-xs store-region-pane container">
+        <ng-container *ngTemplateOutlet="locatorLink"></ng-container>
+      </div>
+      <!--<div class="hidden-xs hidden-lg store-locator-medium">-->
+        <!--<a class="store-locator-link" href="https://www.roomstogo.com/storelocator/" target="_blank" rel="nofollow">-->
+          <!--<i class="ion-android-pin store-locator-icon"></i>-->
+          <!--<span>STORE LOCATOR</span>-->
+        <!--</a>-->
+      <!--</div>-->
+    </div>
+    <div class="col-xs-4 hidden-sm hidden-lg hidden-md">
+      <div class="store-region-pane">
+        <ng-container *ngTemplateOutlet="locatorLink"></ng-container>
+      </div>
+    </div>
+  </div>
+</header>
+
+<ng-template #changeLocationTemplate>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Change Location</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="location-modal">
+      <form #changeLocationForm="ngForm">
+
+        <label for="zip">Your zip code</label>
+        <input class="form-control"
+               name="zip" id="zip" type="text"
+               placeholder="5 Digit Zip Code"
+               [(ngModel)]="userZip" #zip="ngModel"
+               pattern="[0-9]{5}">
+
+        <div [hidden]="zip.valid || zip.pristine"
+             class="alert alert-danger">
+          Must be 5 digit zip code.
+        </div>
+
+      </form>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" (click)="saveLocation()" [disabled]="!zip.valid && !zip.pristine">Save</button>
+  </div>
+</ng-template>

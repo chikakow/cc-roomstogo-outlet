@@ -1,0 +1,195 @@
+[
+  {
+    "city": "Oakland Park",
+    "state": "FL",
+    "contentWeekly": {
+      "title": "Weekly Specials - Oakland Park, Florida",
+      "state": "FL",
+      "images": [
+        {
+          "url": "specials/weekly/fl/oakland-park/1.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "FL"
+        },
+        {
+          "url": "specials/weekly/fl/oakland-park/2.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "FL"
+        },
+        {
+          "url": "specials/weekly/fl/oakland-park/3.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "FL"
+        },
+        {
+          "url": "specials/weekly/fl/oakland-park/4.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "FL"
+        },
+        {
+          "url": "specials/weekly/fl/oakland-park/5.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "FL"
+        }
+      ]
+    },
+    "contentMattress": {
+      "title": "Mattress Specials - Oakland Park, Florida",
+      "state": "FL",
+      "images": [
+        {
+          "url": "specials/mattress/fl/oakland-park/1.png",
+          "alt":"Mattress Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "FL"
+        }
+      ]
+    }
+  },
+  {
+    "city": "Fort Lauderdale",
+    "state": "FL",
+    "contentWeekly": {
+      "title": "Weekly Specials - Oakland Park, Florida",
+      "state": "FL",
+      "images": [
+        {
+          "url": "specials/weekly/fl/oakland-park/1.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "FL"
+        },
+        {
+          "url": "specials/weekly/fl/oakland-park/2.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "FL"
+        },
+        {
+          "url": "specials/weekly/fl/oakland-park/3.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "FL"
+        },
+        {
+          "url": "specials/weekly/fl/oakland-park/4.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "FL"
+        },
+        {
+          "url": "specials/weekly/fl/oakland-park/5.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "FL"
+        }
+      ]
+    },
+    "contentMattress": {
+      "title": "Mattress Specials - Oakland Park, Florida",
+      "state": "FL",
+      "images": [
+        {
+          "url": "specials/mattress/fl/oakland-park/1.png",
+          "alt":"Mattress Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "FL"
+        }
+      ]
+    }
+  },
+  {
+    "city": "Humble",
+    "state": "TX",
+    "contentWeekly": {
+      "title": "Weekly Specials - Humble, Texas",
+      "state": "TX",
+      "images": [
+        {
+          "url": "specials/weekly/tx/humble/1.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        },
+        {
+          "url": "specials/weekly/tx/humble/2.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        },
+        {
+          "url": "specials/weekly/tx/humble/3.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        },
+        {
+          "url": "specials/weekly/tx/humble/4.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        },
+        {
+          "url": "specials/weekly/tx/humble/5.png",
+          "alt":"Weekly Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        }
+      ]
+    },
+    "contentMattress": {
+      "title": "Mattress Specials - Humble, Texas",
+      "state": "TX",
+      "images": [
+        {
+          "url": "specials/mattress/tx/humble/1.png",
+          "alt":"Mattress Special",
+          "title":"",
+          "link": "",
+          "desc": "",
+          "state": "TX"
+        }
+      ]
+    }
+  }
+]
+

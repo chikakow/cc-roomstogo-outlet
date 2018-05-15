@@ -1,0 +1,54 @@
+@import "./variables";
+
+//custom card style
+.card {
+  border: $divider-border-lightgray;
+  border-color: $color-super-lightgray;
+  box-shadow: $box-shadow;
+  border-radius: 0 !important;
+  height: 100%;
+
+  .card-header, .card-content, .card-action {
+    padding: 20px;
+    @include media-breakpoint-down(xs) {
+      padding: 15px;
+    }
+  }
+
+  .card-action {
+    padding-top: 10px;
+
+    @include media-breakpoint-down(xs) {
+      padding-top: 5px;
+    }
+  }
+
+  .card-image {
+    img {
+      margin: auto;
+      display: block;
+    }
+  }
+
+  .card-content {
+    height: 70px;
+  }
+
+  .card-action {
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    a {
+      font-size: 15px;
+      font-weight: bold;
+      color: $color-green;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    a, button {
+      cursor: pointer;
+    }
+  }
+}

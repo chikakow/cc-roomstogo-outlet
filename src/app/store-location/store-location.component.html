@@ -1,0 +1,94 @@
+<div class="container-fluid">
+  <div class="row gray-border-title">
+    <div class="col-xs-12 col-md-11 col-md-offset-1">
+      <h1>Discount Furniture Warehouse - {{ store?.name }}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-6 map-wrapper">
+      <div class="legend">
+        <div class="store-image hidden-xs hidden-sm hidden-md"><img [src]="store?.store_image.url" [alt]="store?.store_image.alt"></div>
+        <div class="legend-detail">
+          <div class="name">{{store?.name}}</div>
+          <div class="street1">{{store?.street1}}</div>
+          <div class="street2" *ngIf="store.street2">{{store?.street2}}</div>
+          <div class="city-state-zip">{{store?.city}}, {{store?.state_abbreviation}} {{store?.zip_code}}</div>
+          <div class="phone">
+            <a href="tel:{{store?.phone}}"><i class="ion-ios-telephone"></i><span>{{store?.phone}}</span></a>
+          </div>
+          <div class="direction">
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination={{destination}}"
+              target="_blank">
+              <i class="ion-android-car"></i><span>&nbsp;Directions</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <agm-map [latitude]="lat" [longitude]="lng" [zoom]="17" *ngIf="isBrowser"
+               [fullscreenControl]="true">
+        <agm-marker [latitude]="lat" [longitude]="lng">
+        </agm-marker>
+      </agm-map>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 store-detail">
+          <div class="store-table">
+            <div class="title"><b><i class="ion-android-time"></i>Store Hours:</b></div>
+            <div class="day">Sunday</div><div class="open-close">{{ storeHours('sun')}}</div>
+            <div class="day">Monday</div><div class="open-close">{{ storeHours('mon')}}</div>
+            <div class="day">Tuesday</div><div class="open-close">{{ storeHours('wed')}}</div>
+            <div class="day">Wednesday</div><div class="open-close">{{ storeHours('tue')}}</div>
+            <div class="day">Thursday</div><div class="open-close">{{ storeHours('thu')}}</div>
+            <div class="day">Friday</div><div class="open-close">{{ storeHours('fri')}}</div>
+            <div class="day">Saturday</div><div class="open-close">{{ storeHours('sat')}}</div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 store-detail">
+          <div class="store-table">
+            <div class="title holiday"><b><i class="glyphicon glyphicon-tree-conifer"></i>Holidays:</b></div>
+            <div class="holidays">{{store?.holidays}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 store-detail">
+          <div class="store-table">
+            <div class="title"><b><i class="ion-android-map"></i>Nearby Neighborhoods & Cities:</b></div>
+            <div class="">{{store?.neighborhoods}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 store-detail">
+          <div class="store-table">
+            <div class="title"><b><i class="glyphicon glyphicon-bell"></i>About Our Affordable Furniture Outlet Location:</b></div>
+            <div class=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="row" *ngIf="!hideSpecials">
+        <div class="col-xs-12 col-md-6 store-detail">
+          <div class="store-table last">
+            <div class="title weekly">
+              <a (click)="specialsLinkClick('weekly')"><b><i class="glyphicon glyphicon-flash"></i>View {{store?.name}}'s weekly specials</b></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6 store-detail">
+          <div class="store-table last">
+            <div class="title mattress">
+              <a (click)="specialsLinkClick('mattress')"><b><i class="glyphicon glyphicon-flash"></i>View {{store?.name}}'s mattress specials</b></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-contents [details]="detail?.details"></app-contents>
+</div>
+
+
+

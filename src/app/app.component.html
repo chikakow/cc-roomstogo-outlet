@@ -1,0 +1,15 @@
+<app-header class="header">
+</app-header>
+
+  <app-menu class="vertical-menu"
+            *ngIf="menuService.isVertical"
+            [ngClass]="{'menu-close': !menuService.isOpen, 'menu-open': menuService.isOpen }">
+  </app-menu>
+  <div class="router-outlet-wrapper"  [ngClass]="{'off': !menuService.isOpen }">
+    <!--TODO: add .vertical-menu-overlay class to below once you add figure out click through of elements underneath the div over it-->
+    <div class="router-outlet">
+      <app-loading-indicator></app-loading-indicator>
+      <router-outlet></router-outlet>
+    </div>
+    <app-footer class="footer"></app-footer>
+  </div>

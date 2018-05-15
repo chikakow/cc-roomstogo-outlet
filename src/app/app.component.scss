@@ -1,0 +1,39 @@
+@import "../assets/styles/variables";
+@import "../assets/styles/animation";
+
+
+//.vertical-menu-overlay {
+//  @include filter(blur(3px));
+//  z-index: -1;
+//  width: 100%;
+//  position: relative;
+//  @include transition(linear, filter, 1ms, $vertical-menu-animation-duration);
+//
+//  &.off {
+//    @include filter(none);
+//    height:0 !important;
+//    overflow:visible;
+//    pointer-events:none;
+//    background:none !important;
+//  }
+//
+//}
+
+.header {
+  flex: 0 0 auto;
+}
+
+.router-outlet-wrapper {
+  flex: 1 1 100%;
+  width: 100%;
+  background-color: $color-purple-lightgrey;
+
+  .router-outlet {
+    position: relative;
+    background-color: white;
+  }
+
+  .footer {
+    position: relative;
+  }
+}

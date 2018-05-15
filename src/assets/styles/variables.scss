@@ -1,0 +1,201 @@
+@import "functions";
+//variables
+
+$color-blue: #00529f;
+$color-blue-font: #023b96;
+$color-light-blue: #95c1ea;
+$color-navy: #0C2B5C;
+$color-white: #fff;
+$color-black: #000;
+$color-darkgray: #333;
+$color-gray: #a9a9a9;
+$color-purple-lightgrey: #6d7890;
+$color-grey-transparent: rgba(20,20,20, 0.4);
+$color-lightgray: #d2d2d2;
+$color-lightergray: lighten($color-lightgray, 5%);
+$color-super-lightgray: #e8e8e8;
+$color-green: #039058;
+$color-green-bg: #09ae6a;
+$color-dark-red: darken(red, 20%);
+$color-yellow-font: #ecc00e;
+
+$divider-border-lightgray: solid $color-lightgray .05em;
+$header-box-shadow: 0px 0px 4px 0px rgba(0,0,0, .5);
+$box-shadow: 1px 1px 6px 2px rgba(55, 55, 55, 0.22);
+
+$row-col-spacing-height: 20px;
+
+$switch-site-height: 40px;
+$mobile-switch-site-height: 25px;
+
+$logo-row-height: 150px;
+$logo-row-height-safari-7-8-9: 175px;
+$mobile-logo-row-height: 68px;
+
+$mobile-header-sales-height: 35px;
+$mobile-header-coupon-app-height: 80px;
+
+$header-fixed-height: $switch-site-height + $logo-row-height;
+$mobile-header-fixed-height: $mobile-switch-site-height + $mobile-header-sales-height + $mobile-logo-row-height + $mobile-header-coupon-app-height;
+
+$vertical-menu-width: 75%;
+$vertical-menu-animation-duration: 150ms;
+
+$zindex-dropdown-backdrop:  990 !default;
+$zindex-navbar:            1000 !default;
+$zindex-dropdown:          1000 !default;
+$zindex-fixed:             1030 !default;
+$zindex-sticky:            1030 !default;
+$zindex-modal-backdrop:    1040 !default;
+$zindex-modal:             1050 !default;
+$zindex-popover:           1060 !default;
+$zindex-tooltip:           1070 !default;
+
+$item-border-radius: 0;
+//mixings
+
+//TODO this is bootstrap 4 grid system - replace one in use with this when we are ready to use bootstrap4
+//@mixin media-breakpoint-down($media) {
+//
+//  @if $media == lg {
+//    @media only screen and (max-width: 1199px) { @content; }
+//  }
+//  @else if $media == md {
+//    @media only screen and (max-width: 991px) { @content; }
+//  }
+//  @else if $media == sm {
+//    @media only screen and (max-width: 767px) { @content; }
+//  }
+//  @else if $media == xs {
+//    @media only screen and (max-width: 575px) { @content; }
+//  }
+//}
+//
+//@mixin media-breakpoint-up($media) {
+//
+//  @if $media == sm {
+//    @media only screen and (min-width: 576px) { @content; }
+//  }
+//  @else if $media == md {
+//    @media only screen and (min-width: 768px) { @content; }
+//  }
+//  @else if $media == lg {
+//    @media only screen and (min-width: 992px) { @content; }
+//  }
+//  @else if $media == xl {
+//    @media only screen and (min-width: 1200px) { @content; }
+//  }
+//}
+
+//@mixin media-breakpoint-only($media) {
+//  @if $media == xs {
+//    @media only screen and (max-width: 575px) { @content; }
+//  }
+//  @else if $media == sm {
+//    @media only screen and (min-width: 576px) { @content; }
+//  }
+//  @else if $media == md {
+//    @media only screen and (min-width: 768px) and (max-width: 991px) { @content; }
+//  }
+//  @else if $media == lg {
+//    @media only screen and (min-width: 992px) and (max-width: 1999px) { @content; }
+//  }
+//}
+
+@mixin media-breakpoint-down($media) {
+
+  @if $media == xl {
+    @media only screen and (max-width: 1619px) { @content; }
+  }
+  @else if $media == lg {
+    @media only screen and (max-width: 1999px) { @content; }
+  }
+  @else if $media == md {
+    @media only screen and (max-width: 1199px) { @content; }
+  }
+  @else if $media == sm {
+    @media only screen and (max-width: 991px) { @content; }
+  }
+  @else if $media == xs {
+    @media only screen and (max-width: 767px) { @content; }
+  }
+  @else if $media == xxs {
+      @media only screen and (max-width: 575px) { @content; }
+  }
+}
+
+@mixin media-breakpoint-up($media) {
+
+  @if $media == sm {
+    @media only screen and (min-width: 768px) { @content; }
+  }
+  @else if $media == md {
+    @media only screen and (min-width: 992px) { @content; }
+  }
+  @else if $media == lg {
+    @media only screen and (min-width: 1200px) { @content; }
+  }
+  @else if $media == xl {
+    @media only screen and (min-width: 1620px) { @content; }
+  }
+}
+
+@mixin media-breakpoint-only($media) {
+  @if $media == xs {
+    @media only screen and (min-width: 576px) { @content; }
+  }
+  @else if $media == sm {
+    @media only screen and (min-width: 768px) and (max-width: 991px) { @content; }
+  }
+  @else if $media == md {
+    @media only screen and (min-width: 992px) and (max-width: 1999px) { @content; }
+  }
+  @else if $media == lg {
+    @media only screen and (min-width: 1200px) and (max-width: 1619px) { @content; }
+  }
+  @else if $media == xl {
+    @media only screen and (min-width: 1620px) { @content; }
+  }
+}
+
+@mixin img-keep-ratio-height($max-height) {
+  display: block;
+  max-height: $max-height;
+  width: auto;
+  height: auto;
+}
+@mixin img-keep-ratio-width($max-width) {
+  display: block;
+  max-width: $max-width;
+  width: auto;
+  height: auto;
+}
+
+@mixin filter ($filter) {
+  filter: $filter;
+}
+
+@mixin hex-to-rgba($property, $color, $opacity: 0.3) {
+  #{$property}: $color; /* The Fallback */
+  #{$property}: rgba($color, $opacity);
+}
+
+//text styling
+
+.smooth-text {
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+.word-break:before {
+  content:"\A";
+  white-space:pre;
+}
+
+// image styling
+.img-cover {
+  max-height: 100%;
+  max-width: 100%;
+}
+

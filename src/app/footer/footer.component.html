@@ -1,0 +1,35 @@
+<footer class="container-fluid">
+  <!--<div class="row top-padding">-->
+    <!--<div class="col-xs-6 text-right facebook-wrapper">-->
+      <!--<a href="https://www.facebook.com/roomstogo/" target="_blank"><i class="ion-social-facebook social-icon facebook"></i></a>-->
+    <!--</div>-->
+    <!--<div class="col-xs-6 text-left">-->
+      <!--<a href="https://www.instagram.com/roomstogo/" target="_blank"><i class="ion-social-instagram-outline social-icon"></i></a>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div class="row">-->
+    <!--<div class="col-xs-6 text-right">-->
+      <!--<a href="https://pinterest.com/roomstogo/" target="_blank"><i class="ion-social-pinterest social-icon"></i></a>-->
+    <!--</div>-->
+    <!--<div class="col-xs-6 text-left">-->
+      <!--<a href="https://twitter.com/RoomsToGo" target="_blank"><i class="ion-social-twitter social-icon"></i></a>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div class="row">-->
+    <!--<div class="col-xs-12 text-center">-->
+      <!--<a href="https://www.youtube.com/channel/UCd77CqGAnGsyDD-lFFkyrNw" target="_blank"><i class="ion-social-youtube social-icon"></i></a>-->
+    <!--</div>-->
+  <!--</div>-->
+  <div class="row top-padding bottom-padding">
+    <div class="col-xs-12 text-center">
+      <div>Copyright © 1999 - {{ today | year :'short'}} Rooms To Go, Inc.</div>
+      <div><a class="terms" href="https://www.roomstogo.com/content/Customer-Service/Privacy" target="_blank">Privacy Policy</a> | <a class="terms" href="https://www.roomstogo.com/content/Customer-Service/Terms-of-use" target="_blank">Terms Of Use</a> | <a class="terms" routerLink="/customer-service/terms-of-sale">Terms Of Sale</a></div>
+    </div>
+  </div>
+
+  <div class="row bottom-padding">
+    <div class="col-xs-12" *ngIf="!outletStoreUrl">
+      <app-outlet-stores></app-outlet-stores>
+    </div>
+  </div>
+</footer>

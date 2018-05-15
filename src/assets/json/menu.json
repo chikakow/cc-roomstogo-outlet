@@ -1,0 +1,350 @@
+[
+  {
+    "text": "Living Rooms",
+    "icon": "glyphicon-dashboard",
+    "route": "discount-living-rooms",
+    "submenu": [
+      {
+        "text": "Sofas",
+        "icon": "glyphicon-dashboard",
+        "route": "discount-living-rooms/sofas",
+        "rtglink": "https://www.roomstogo.com/furniture/Living-Rooms/Sofas/_/N-8ez",
+        "submenu": null
+      },
+      {
+        "text": "Sleepers",
+        "icon": "glyphicon-dashboard",
+        "route": "discount-living-rooms/sleeper-sofas",
+        "rtglink": "https://www.roomstogo.com/furniture/Living-Rooms/Sleepers/_/N-8f1",
+        "submenu": null
+      },
+      {
+        "text": "Reclining Sofas",
+        "icon": "glyphicon-dashboard",
+        "route": "discount-living-rooms/reclining-sofas",
+        "rtglink": "https://www.roomstogo.com/furniture/Living-Rooms/Reclining-Sofas/_/N-8f0",
+        "submenu": null
+      },
+      {
+        "text": "Loveseats",
+        "icon": "glyphicon-dashboard",
+        "route": "discount-living-rooms/loveseats",
+        "rtglink": "https://www.roomstogo.com/furniture/Living-Rooms/Loveseats/_/N-8f6",
+        "submenu": null
+      },
+      {
+        "text": "Chairs",
+        "icon": "glyphicon-flag",
+        "route": "discount-living-rooms/chairs",
+        "rtglink": "https://www.roomstogo.com/furniture/Living-Rooms/Chairs/_/N-8fa",
+        "submenu": null
+      },
+      {
+        "text": "Ottomans",
+        "icon": "glyphicon-flag",
+        "route": "discount-living-rooms/ottomans",
+        "rtglink": "https://www.roomstogo.com/furniture/Living-Rooms/Ottomans/_/N-8fc",
+        "submenu": null
+      },
+      {
+        "text": "Recliners",
+        "icon": "glyphicon-dashboard",
+        "route": "discount-living-rooms/recliners",
+        "rtglink": "https://www.roomstogo.com/furniture/Living-Rooms/Recliners/_/N-8f9",
+        "submenu": null
+      },
+      {
+        "text": "Chaises",
+        "icon": "glyphicon-flag",
+        "route": "discount-living-rooms/chaise-lounges",
+        "rtglink": "https://www.roomstogo.com/furniture/Living-Rooms/_/N-8ev",
+        "submenu": null
+      },
+      {
+        "text": "Coffee Table Sets",
+        "icon": "glyphicon-flag",
+        "route": "discount-living-rooms/coffee-table-sets",
+        "rtglink": "https://www.roomstogo.com/furniture/Living-Rooms/Cocktail-Tables/_/N-8u0",
+        "submenu": null
+      },
+      {
+        "text": "Entertainment Center",
+        "icon": "glyphicon-flag",
+        "route": "discount-living-rooms/entertainment-center",
+        "rtglink": "https://www.roomstogo.com/furniture/Living-Rooms/Home-Entertainment/_/N-8ff",
+        "submenu": null
+      }
+    ],
+    "submenuLink": "./assets/images/livingroom.png"
+  },
+  {
+    "text": "Dining Rooms",
+    "icon": "glyphicon-dashboard",
+    "route": "discount-dining-rooms",
+    "submenu": [
+      {
+        "text": "Dining Room Sets",
+        "icon": "glyphicon-dashboard",
+        "route": "discount-dining-rooms/dining-set",
+        "rtglink": "https://www.roomstogo.com/furniture/Dining-Rooms/Dining-Room-Sets/_/N-8e7",
+        "submenu": null
+      },
+      {
+        "text": "Dining Tables",
+        "icon": "glyphicon-flag",
+        "route": "discount-dining-rooms/tables",
+        "rtglink": "https://www.roomstogo.com/furniture/Dining-Rooms/Dining-Tables/_/N-8e8",
+        "submenu": null
+      },
+      {
+        "text": "Side Chairs",
+        "icon": "glyphicon-flag",
+        "route": "discount-dining-rooms/side-chairs",
+        "rtglink": "https://www.roomstogo.com/furniture/Dining-Rooms/Side-Chairs/_/N-8ea",
+        "submenu": null
+      },
+      {
+        "text": "China Cabinets",
+        "icon": "glyphicon-flag",
+        "route": "discount-dining-rooms/china-cabinets",
+        "rtglink": "https://www.roomstogo.com/furniture/Dining-Rooms/China-Cabinets/_/N-8eb",
+        "submenu": null
+      },
+      {
+        "text": "Benches",
+        "icon": "glyphicon-flag",
+        "route": "discount-dining-rooms/benches",
+        "rtglink": "https://www.roomstogo.com/furniture/Dining-Rooms/Benches/_/N-8ee",
+        "submenu": null
+      },
+      {
+        "text": "Servers",
+        "icon": "glyphicon-flag",
+        "route": "discount-dining-rooms/servers",
+        "rtglink": "https://www.roomstogo.com/furniture/Dining-Rooms/Servers/_/N-8ec",
+        "submenu": null
+      }
+    ],
+    "submenuLink": "./assets/images/diningroom.png"
+  },
+  {
+    "text": "Bedrooms",
+    "icon": "glyphicon-dashboard",
+    "route": "discount-bedrooms",
+    "submenu": [
+      {
+        "text": "Bed Room Sets",
+        "icon": "glyphicon-flag",
+        "route": "discount-bedrooms/bedroom-sets",
+        "rtglink": "https://www.roomstogo.com/furniture/Bedrooms/Queen-Bedroom-Sets/_/N-8db",
+        "submenu": null
+      },
+      {
+        "text": "Queen Bedroom Sets",
+        "icon": "glyphicon-flag",
+        "route": "discount-bedrooms/queen-bedroom-sets",
+        "rtglink": "https://www.roomstogo.com/furniture/Bedrooms/Queen-Bedroom-Sets/_/N-8db",
+        "submenu": null
+      },
+      {
+        "text": "King Bedroom Sets",
+        "icon": "glyphicon-flag",
+        "route": "discount-bedrooms/king-bedroom-sets",
+        "rtglink": "https://www.roomstogo.com/furniture/Bedrooms/King-Bedroom-Sets/_/N-8dc",
+        "submenu": null
+      },
+      {
+        "text": "Queen Beds",
+        "icon": "glyphicon-flag",
+        "route": "discount-bedrooms/queen-beds",
+        "rtglink": "https://www.roomstogo.com/furniture/Bedrooms/Queen-Beds/_/N-8dd",
+        "submenu": null
+      },
+      {
+        "text": "King Beds",
+        "icon": "glyphicon-flag",
+        "route": "discount-bedrooms/king-beds",
+        "rtglink": "https://www.roomstogo.com/furniture/Bedrooms/King-Beds/_/N-8de",
+        "submenu": null
+      },
+      {
+        "text": "Daybeds",
+        "icon": "glyphicon-flag",
+        "route": "discount-bedrooms/daybeds",
+        "rtglink": "https://www.roomstogo.com/furniture/Bedrooms/Daybeds/_/N-8df",
+        "submenu": null
+      },
+      {
+        "text": "Headboards",
+        "icon": "glyphicon-flag",
+        "route": "discount-bedrooms/headboards",
+        "rtglink": "https://www.roomstogo.com/furniture/Bedrooms/Headboards/_/N-8dg",
+        "submenu": null
+      },
+      {
+        "text": "Dressers",
+        "icon": "glyphicon-flag",
+        "route": "discount-bedrooms/dressers",
+        "rtglink": "https://www.roomstogo.com/furniture/Bedrooms/Dressers/_/N-8dh",
+        "submenu": null
+      },
+      {
+        "text": "Dresser Mirrors",
+        "icon": "glyphicon-flag",
+        "route": "discount-bedrooms/vanity-mirrors",
+        "rtglink": "https://www.roomstogo.com/furniture/Bedrooms/Dresser-Mirrors/_/N-8di",
+        "submenu": null
+      },
+      {
+        "text": "Nightstands",
+        "icon": "glyphicon-flag",
+        "route": "discount-bedrooms/nightstands",
+        "rtglink": "https://www.roomstogo.com/furniture/Bedrooms/Nightstands/_/N-8dj",
+        "submenu": null
+      },
+      {
+        "text": "Chests",
+        "icon": "glyphicon-flag",
+        "route": "discount-bedrooms/chests",
+        "rtglink": "https://www.roomstogo.com/furniture/Bedrooms/Chests/_/N-8dk",
+        "submenu": null
+      },
+      {
+        "text": "Desks",
+        "icon": "glyphicon-flag",
+        "route": "discount-bedrooms/desks",
+        "rtglink": "https://www.roomstogo.com/furniture/Accessories/Desks/_/N-8d2",
+        "submenu": null
+      }
+    ],
+    "submenuLink": "./assets/images/bedroom.png"
+  },
+  {
+    "text": "Leather",
+    "icon": "glyphicon-dashboard",
+    "route": "discount-leather",
+    "submenu": [
+      {
+        "text": "Leather Sofas",
+        "icon": "glyphicon-dashboard",
+        "route": "discount-leather/sofas",
+        "rtglink": "https://www.roomstogo.com/furniture/Leather/Leather-Sofas/_/N-8ek",
+        "submenu": null
+      },
+      {
+        "text": "Leather Loveseats",
+        "icon": "glyphicon-flag",
+        "route": "discount-leather/leather-loveseats",
+        "rtglink": "https://www.roomstogo.com/furniture/Leather/Leather-Loveseats/_/N-8el",
+        "submenu": null
+      },
+      {
+        "text": "Leather Recliners",
+        "icon": "glyphicon-flag",
+        "route": "discount-leather/leather-recliners",
+        "rtglink": "https://www.roomstogo.com/furniture/Leather/Leather-Recliners/_/N-8eo",
+        "submenu": null
+      },
+      {
+        "text": "Leather Recliner Sofas",
+        "icon": "glyphicon-flag",
+        "route": "discount-leather/reclining-sofas",
+        "rtglink": "https://www.roomstogo.com/furniture/Leather/Leather-Recliners/_/N-8eo",
+        "submenu": null
+      },
+      {
+        "text": "Leather Chairs",
+        "icon": "glyphicon-flag",
+        "route": "discount-leather/leather-chairs",
+        "rtglink": "https://www.roomstogo.com/furniture/Leather/Leather-Chairs/_/N-8ep",
+        "submenu": null
+      },
+      {
+        "text": "Leather Ottomans",
+        "icon": "glyphicon-flag",
+        "route": "discount-leather/leather-ottomans",
+        "rtglink": "https://www.roomstogo.com/furniture/Leather/Leather-Ottomans/_/N-8eq",
+        "submenu": null
+      }
+    ],
+    "submenuLink": "./assets/images/leather.png"
+  },
+  {
+    "text": "Mattress",
+    "icon": "glyphicon-dashboard",
+    "route": "discount-mattress",
+    "submenu": [
+      {
+        "text": "Queen Mattress",
+        "icon": "glyphicon-dashboard",
+        "route": "discount-mattress/queen-mattresses",
+        "submenu": null
+      },
+      {
+        "text": "King Mattress",
+        "icon": "glyphicon-flag",
+        "route": "discount-mattress/king-mattresses",
+        "submenu": null
+      }
+    ],
+    "submenuLink": "./assets/images/matress.png"
+  },
+  {
+    "text": "Accessories",
+    "icon": "glyphicon-dashboard",
+    "route": "discount-home-decor",
+    "submenu": [
+      {
+        "text": "Lamps",
+        "icon": "glyphicon-dashboard",
+        "route": "discount-home-decor/lamps",
+        "rtglink": "https://www.roomstogo.com/furniture/Accessories/Lamps/_/N-8cs",
+        "submenu": null
+      },
+      {
+        "text": "Rugs",
+        "icon": "glyphicon-flag",
+        "route": "discount-home-decor/rugs",
+        "rtglink": "https://www.roomstogo.com/furniture/Accessories/Rugs/_/N-8cr",
+        "submenu": null
+      },
+      {
+        "text": "Wall Art",
+        "icon": "glyphicon-flag",
+        "route": "discount-home-decor/wall-art",
+        "rtglink": "https://www.roomstogo.com/furniture/Accessories/Wall-Decor/_/N-8ct",
+        "submenu": null
+      },
+      {
+        "text": "Silk Florals",
+        "icon": "glyphicon-flag",
+        "route": "discount-home-decor/silk-flowers",
+        "rtglink": "https://www.roomstogo.com/furniture/Accessories/Wall-Decor/_/N-8ct",
+        "submenu": null
+      },
+      {
+        "text": "Throw Pillows",
+        "icon": "glyphicon-flag",
+        "route": "discount-home-decor/throw-pillows",
+        "rtglink": "https://www.roomstogo.com/furniture/Accessories/Accent-Pillows/_/N-8cv",
+        "submenu": null
+      },
+      {
+        "text": "Accent Cabinets",
+        "icon": "glyphicon-flag",
+        "route": "discount-home-decor/accent-cabinet",
+        "rtglink": "https://www.roomstogo.com/furniture/Accessories/Accent-Cabinets/_/N-8cu",
+        "submenu": null
+      },
+      {
+        "text": "Storage Benches",
+        "icon": "glyphicon-flag",
+        "route": "discount-home-decor/storage-benches",
+        "rtglink": "https://www.roomstogo.com/furniture/Accessories/Accent-Benches/_/N-8d0",
+        "submenu": null
+      }
+
+    ],
+    "submenuLink": "./assets/images/isofa.png"
+  }
+]

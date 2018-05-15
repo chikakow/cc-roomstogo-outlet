@@ -1,0 +1,19 @@
+@import "../../assets/styles/variables";
+
+:host {
+
+}
+
+.details {
+  margin-top: 20px;
+  background-color: $color-super-lightgray;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding : 20px;
+
+  .detail {
+    border: dashed $color-lightgray 2px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
